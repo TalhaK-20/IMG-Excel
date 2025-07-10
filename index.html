@@ -233,6 +233,8 @@
             grid-template-columns: repeat(3, 1fr);
             gap: 1.5rem;
             margin-top: 2rem;
+            position: relative;
+            left: 56px;
         }
 
         .stat-item {
@@ -651,17 +653,17 @@
                 <div class="hero-card">
                     <h3 style="color: #ffd93d; margin-bottom: 1rem;">Success Metrics</h3>
                     <div class="hero-stats">
-                        <div class="stat-item">
+                        <!-- <div class="stat-item">
                             <span class="stat-number">500+</span>
                             <span class="stat-label">Students</span>
+                        </div> -->
+                        <div class="stat-item">
+                            <span class="stat-number">100%</span>
+                            <span class="stat-label">Satisfaction Rate</span>
                         </div>
                         <div class="stat-item">
-                            <span class="stat-number">95%</span>
-                            <span class="stat-label">Success Rate</span>
-                        </div>
-                        <div class="stat-item">
-                            <span class="stat-number">24/7</span>
-                            <span class="stat-label">Support</span>
+                            <span class="stat-number">Dedicated</span>
+                            <span class="stat-label">Support Available</span>
                         </div>
                     </div>
                 </div>
@@ -776,6 +778,20 @@
                         <li>Unlimited UK team access</li>
                     </ul>
                     <button class="package-cta">Go Premium</button>
+                </div>
+
+                <div class="package-card">
+                    <div class="package-header">
+                        <h3 class="package-name">UKMLA & OSCE practice</h3>
+                        <div class="package-price">Coming Soon!</div>
+                    </div>
+                    <!-- <ul class="package-features">
+                        <li>Individual coaching (Virtual & Face-to-face)</li>
+                        <li>Peer reviewed publication guidance</li>
+                        <li>2-cycle Audit and QIP support</li>
+                        <li>Unlimited UK team access</li>
+                    </ul>
+                    <button class="package-cta">Go Premium</button> -->
                 </div>
             </div>
         </div>
@@ -906,7 +922,7 @@
         // Add ripple CSS
         const style = document.createElement('style');
         style.textContent = `
-                        .ripple {
+            .ripple {
                 position: absolute;
                 border-radius: 50%;
                 background: rgba(255,255,255,0.4);
